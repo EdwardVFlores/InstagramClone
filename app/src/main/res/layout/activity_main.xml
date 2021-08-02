@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/SignUpButton"
+        android:id="@+id/SwitchLoginPageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sign_up_button"
@@ -20,7 +20,7 @@
         android:id="@+id/login_fragment_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/SignUpButton"
+        app:layout_constraintBottom_toTopOf="@+id/SwitchLoginPageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

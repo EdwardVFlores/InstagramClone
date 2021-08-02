@@ -11,9 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val LogInFragment = LogInFragment()
         val SignUpFragment = SignUpFragment()
-        val signUpButton : Button = findViewById(R.id.SignUpButton)
+        val signUpButton : Button = findViewById(R.id.SwitchLoginPageButton)
 
-        var isLoginFragment = true;
+        var isLoginFragment = true
+
         fragmentReplace(R.id.login_fragment_view,LogInFragment)
 
         signUpButton.setOnClickListener {
@@ -27,8 +28,6 @@ class MainActivity : AppCompatActivity() {
                 true
             }
         }
-
-
     }
 
     private fun fragmentReplace(firstFragment: Int, secondFragment: Fragment) {

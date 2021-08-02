@@ -16,39 +16,39 @@
             android:layout_height="125dp"
             android:layout_marginTop="32dp"
             android:src="@drawable/ic_instagram_logo"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="@+id/SignUpButton"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/UsernameSignUp"
+            android:id="@+id/FulleNameSignUpEditText"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="Full Name"
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
-            app:layout_constraintTop_toBottomOf="@+id/EmailAddressSignUp" />
+            app:layout_constraintStart_toStartOf="@+id/SignUpButton"
+            app:layout_constraintTop_toBottomOf="@+id/EmailAddressSignUpEditText" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/PasswordSignUpEditText"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintStart_toStartOf="@+id/SignUpButton"
+            app:layout_constraintTop_toBottomOf="@+id/UsernameSignUpEditText" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/SignUpButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -59,32 +59,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+            app:layout_constraintTop_toBottomOf="@+id/PasswordSignUpEditText" />
 
         <EditText
-            android:id="@+id/EmailAddressSignUp"
+            android:id="@+id/EmailAddressSignUpEditText"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="Email Address"
             android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="@+id/SignUpButton"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/UsernameSignUpEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="Username"
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
-            app:layout_constraintStart_toStartOf="@+id/button2"
-            app:layout_constraintTop_toBottomOf="@+id/UsernameSignUp" />
+            app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
+            app:layout_constraintStart_toStartOf="@+id/SignUpButton"
+            app:layout_constraintTop_toBottomOf="@+id/FulleNameSignUpEditText" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
