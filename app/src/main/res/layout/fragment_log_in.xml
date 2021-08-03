@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/FulleNameSignUpEditText"
+            android:id="@+id/FullNameSignUpEditText"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
@@ -43,7 +43,7 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
             app:layout_constraintStart_toStartOf="@+id/SignUpButton"
-            app:layout_constraintTop_toBottomOf="@+id/FulleNameSignUpEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/FullNameSignUpEditText" />
 
         <Button
             android:id="@+id/SignUpButton"

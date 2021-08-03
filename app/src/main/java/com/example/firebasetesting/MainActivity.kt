@@ -1,9 +1,16 @@
 package com.example.firebasetesting
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+//import com.google.firebase.auth.FirebaseAuth
+//import com.google.firebase.database.DatabaseReference
+//import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,23 +18,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val LogInFragment = LogInFragment()
         val SignUpFragment = SignUpFragment()
-        val signUpButton : Button = findViewById(R.id.SwitchLoginPageButton)
+        val switchLoginBtn : Button = findViewById(R.id.SwitchLoginPageButton)
+
+
 
         var isLoginFragment = true
 
         fragmentReplace(R.id.login_fragment_view,LogInFragment)
 
-        signUpButton.setOnClickListener {
+        switchLoginBtn.setOnClickListener {
             isLoginFragment = if(isLoginFragment) {
                 fragmentReplace(R.id.login_fragment_view,SignUpFragment)
-                signUpButton.setText(R.string.log_in_button)
+                switchLoginBtn.setText(R.string.log_in_button)
                 false
             } else {
                 fragmentReplace(R.id.login_fragment_view,LogInFragment)
-                signUpButton.setText(R.string.sign_up_button)
+                switchLoginBtn.setText(R.string.sign_up_button)
                 true
             }
         }
+
     }
 
     private fun fragmentReplace(firstFragment: Int, secondFragment: Fragment) {
